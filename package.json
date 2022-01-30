@@ -1,0 +1,30 @@
+{
+  "name": "disney-api-bot",
+  "version": "1.0.0",
+  "description": "Disney Character API Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kyleboehlen@bitbucket.org/kyleboehlen/disney-api-bot.git"
+  },
+  "keywords": [
+    "disney",
+    "bot",
+    "api"
+  ],
+  "author": "Kyle Boehlen",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://bitbucket.org/kyleboehlen/disney-api-bot/issues"
+  },
+  "homepage": "https://bitbucket.org/kyleboehlen/disney-api-bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "axios": "^0.24.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.5.1"
+  }
+}
