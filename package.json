@@ -4,7 +4,8 @@
   "description": "Disney Character API Discord bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "@discordjs/rest": "^0.2.0-canary.0",
     "axios": "^0.24.0",
     "discord-api-types": "^0.26.1",
-    "discord.js": "^13.5.1"
+    "discord.js": "^13.5.1",
+    "node-cache": "^5.1.2"
   }
 }
