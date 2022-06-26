@@ -1,7 +1,11 @@
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const {clientId, guildId, token} = require('./config.json');
 const { SlashCommandBuilder } = require('@discordjs/builders');
+
+// Token/client id
+require("dotenv").config();
+const token = process.env.TOKEN
+const clientId = process.env.CLIENT_ID
 
 const commands = [];
 const command =
@@ -58,7 +62,7 @@ client.on('interactionCreate', async interaction => {
       } else { // Couldn't find character embed
         embed =
           new MessageEmbed().setImage("https://www.kindpng.com/picc/m/681-6811770_thumb-image-mickey-mouse-shrugging-hd-png-download.png")
-            .setTitle("Oops, couldn't find a character by the name '" + string + "'")
+            .setTitle("Oops, couldn't find a character by the name '" + charName + "'")
             .addField("Pro-tip", "Make sure the capitalization and punctuation is correct for the character name you're searching for");
       }
     } else { // Get a random character

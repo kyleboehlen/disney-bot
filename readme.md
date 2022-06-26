@@ -2,7 +2,7 @@ My second Discord bot, honestly not *much* more complicated than the first one.
 
 Copy the config and fill out the token:
 
-`cp config.example.json config.json`
+`cp .env.example .env`
 
 Then simply run:
 
