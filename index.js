@@ -52,7 +52,7 @@ client.on('interactionCreate', async interaction => {
     const charName = interaction.options.getString('name'); // Optional param to pass a disney characters name
 
     // It'll take us more than 3 seconds to make the api call, so defer the response
-    interaction.deferReply();
+    await interaction.deferReply();
 
     if (charName !== null) { // Get a specific character
       character = await getCharacterByName(charName);
