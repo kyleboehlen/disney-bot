@@ -5,7 +5,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 // Token/client id
 require("dotenv").config();
 const token = process.env.DISNEY_TOKEN
-const clientId = process.env.CLIENT_ID
+const clientId = process.env.DISNEY_CLIENT_ID
 
 const commands = [];
 const command =
